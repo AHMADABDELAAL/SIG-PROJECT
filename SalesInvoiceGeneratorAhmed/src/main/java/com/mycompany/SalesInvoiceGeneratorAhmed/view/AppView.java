@@ -1,11 +1,11 @@
-package com.mycompany.finaljavaproject.view;
+package com.mycompany.SalesInvoiceGeneratorAhmed.view;
 
-import com.mycompany.finaljavaproject.controller.InvoiceAppActionListener;
-import com.mycompany.finaljavaproject.controller.InvoiceTabelListener;
-import com.mycompany.finaljavaproject.model.HeaderTablelModel;
-import com.mycompany.finaljavaproject.model.InvoiceHeaderHandeller;
-import com.mycompany.finaljavaproject.model.InvoiceLinesHandler;
-import com.mycompany.finaljavaproject.model.LinesTabelModel;
+import com.mycompany.SalesInvoiceGeneratorAhmed.controller.InvoiceAppActionListener;
+import com.mycompany.SalesInvoiceGeneratorAhmed.controller.InvoiceTabelListener;
+import com.mycompany.SalesInvoiceGeneratorAhmed.model.HeaderTablelModel;
+import com.mycompany.SalesInvoiceGeneratorAhmed.model.InvoiceHeaderHandeller;
+import com.mycompany.SalesInvoiceGeneratorAhmed.model.InvoiceLinesHandler;
+import com.mycompany.SalesInvoiceGeneratorAhmed.model.LinesTabelModel;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import javax.swing.JLabel;

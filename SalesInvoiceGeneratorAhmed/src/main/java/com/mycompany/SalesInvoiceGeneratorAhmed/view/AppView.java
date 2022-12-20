@@ -84,7 +84,7 @@ public class AppView extends javax.swing.JFrame {
         deleteInvoiceButton.setText("Delete Invoice");
         deleteInvoiceButton.addActionListener(actionLestener);
 
-        save.setText("Save");
+        save.setText("Create New Item");
         save.addActionListener(actionLestener);
         save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class AppView extends javax.swing.JFrame {
             }
         });
 
-        cancelButton.setText("Cancel");
+        cancelButton.setText("Delete Item");
         cancelButton.addActionListener(actionLestener);
 
         invoiceNumberLabel.setText("Invoice Number");

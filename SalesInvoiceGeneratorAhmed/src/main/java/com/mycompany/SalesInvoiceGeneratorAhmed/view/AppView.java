@@ -33,7 +33,7 @@ public class AppView extends javax.swing.JFrame {
         createNewInvoiceButton = new javax.swing.JButton();
         deleteInvoiceButton = new javax.swing.JButton();
         save = new javax.swing.JButton();
-        cancelButton = new javax.swing.JButton();
+        deleteItemButton = new javax.swing.JButton();
         invoiceNumberLabel = new javax.swing.JLabel();
         invoiceDateLabel = new javax.swing.JLabel();
         coustomerNameLabel = new javax.swing.JLabel();
@@ -83,6 +83,11 @@ public class AppView extends javax.swing.JFrame {
 
         deleteInvoiceButton.setText("Delete Invoice");
         deleteInvoiceButton.addActionListener(actionLestener);
+        deleteInvoiceButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteInvoiceButtonActionPerformed(evt);
+            }
+        });
 
         save.setText("Create New Item");
         save.addActionListener(actionLestener);
@@ -92,8 +97,13 @@ public class AppView extends javax.swing.JFrame {
             }
         });
 
-        cancelButton.setText("Delete Item");
-        cancelButton.addActionListener(actionLestener);
+        deleteItemButton.setText("Delete Item");
+        deleteItemButton.addActionListener(actionLestener);
+        deleteItemButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteItemButtonActionPerformed(evt);
+            }
+        });
 
         invoiceNumberLabel.setText("Invoice Number");
 
@@ -130,7 +140,7 @@ public class AppView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(save)
                 .addGap(18, 18, 18)
-                .addComponent(cancelButton)
+                .addComponent(deleteItemButton)
                 .addGap(128, 128, 128))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -187,7 +197,7 @@ public class AppView extends javax.swing.JFrame {
                     .addComponent(createNewInvoiceButton)
                     .addComponent(deleteInvoiceButton)
                     .addComponent(save)
-                    .addComponent(cancelButton))
+                    .addComponent(deleteItemButton))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -197,6 +207,14 @@ public class AppView extends javax.swing.JFrame {
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_saveActionPerformed
+
+    private void deleteInvoiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteInvoiceButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteInvoiceButtonActionPerformed
+
+    private void deleteItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteItemButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteItemButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,11 +252,11 @@ public class AppView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable InvoiceHeaderTbl;
     private javax.swing.JTable InvoiceLineTbl;
-    private javax.swing.JButton cancelButton;
     private javax.swing.JLabel coustomerNameLabel;
     private javax.swing.JButton createNewInvoiceButton;
     private javax.swing.JLabel customerNameVlueLabel;
     private javax.swing.JButton deleteInvoiceButton;
+    private javax.swing.JButton deleteItemButton;
     private javax.swing.JLabel incoiveDatevluelable;
     private javax.swing.JLabel invoiceDateLabel;
     private javax.swing.JLabel invoiceNumberLabel;

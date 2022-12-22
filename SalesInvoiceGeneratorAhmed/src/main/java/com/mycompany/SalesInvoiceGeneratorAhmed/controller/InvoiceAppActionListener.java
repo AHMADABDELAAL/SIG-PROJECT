@@ -45,8 +45,8 @@ public class InvoiceAppActionListener implements ActionListener{
             case "Save File" -> saveFile();
             case "Create New Invoice" -> createNewInvoice();
             case "Delete Invoice" -> deleteInvoice();
-            case "Save" -> save();
-            case "Cancel" -> cancel();
+            case "Create New Item" -> save();
+            case "Delete Item" -> cancel();
             case "newInvCancel" -> newInvCancel();
             case "newInvOK" -> newInvOkay();
             case "newLineOK" -> newLineOkay();

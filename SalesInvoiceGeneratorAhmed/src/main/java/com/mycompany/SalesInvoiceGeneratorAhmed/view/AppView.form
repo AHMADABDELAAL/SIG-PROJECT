@@ -64,7 +64,7 @@
               <EmptySpace max="32767" attributes="0"/>
               <Component id="save" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="cancelButton" min="-2" max="-2" attributes="0"/>
+              <Component id="deleteItemButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
@@ -135,7 +135,7 @@
                   <Component id="createNewInvoiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="deleteInvoiceButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="save" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="deleteItemButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
@@ -202,6 +202,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete Invoice"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteInvoiceButtonActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="deleteInvoiceButton.addActionListener(actionLestener);&#xd;&#xa;"/>
       </AuxValues>
@@ -217,12 +220,15 @@
         <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="save.addActionListener(actionLestener);&#xd;&#xa;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="cancelButton">
+    <Component class="javax.swing.JButton" name="deleteItemButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete Item"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteItemButtonActionPerformed"/>
+      </Events>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cancelButton.addActionListener(actionLestener);&#xd;&#xa;"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="deleteItemButton.addActionListener(actionLestener);&#xd;&#xa;"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="invoiceNumberLabel">
